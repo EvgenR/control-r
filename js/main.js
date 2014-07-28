@@ -14,5 +14,5 @@ requirejs.config({
   }
 })
 
-require(['index'])
+require(['geomap'])
 
