@@ -1,4 +1,3 @@
-alert('Yo!')
 requirejs.config({
   baseUrl: 'js',
   paths: {
@@ -7,7 +6,7 @@ requirejs.config({
     jquery_mobile: 'https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.1/jquery.mobile.min',
     mapbox:        'https://api.tiles.mapbox.com/mapbox.js/v1.6.4/mapbox',
     maplabel:      'https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-label/v0.2.1/leaflet.label',
-  }
+  },
 
   shim: {
     jquery_mobile: {deps: ['jquery']},
