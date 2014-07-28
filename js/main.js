@@ -1,3 +1,4 @@
+alert('Yo!')
 requirejs.config({
   baseUrl: 'js',
   paths: {
@@ -11,6 +12,7 @@ requirejs.config({
   shim: {
     jquery_mobile: {deps: ['jquery']},
     jquery_ui:     {deps: ['jquery_mobile']},
+    maplabel:      {deps: ['mapbox'], exports: 'L'},
   }
 })
 

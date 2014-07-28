@@ -20,7 +20,7 @@ define(['geoobjects', 'maplabel', 'jquery_mobile'], function(Geoobjects){
 	  var hash = '#page-' + i
 	  $(a).text(val.label).attr('href', hash)
 	  var marker = L.marker([val.lat, val.lng]).bindLabel(val.label, {noHide: true}).addTo(map) //.on('click', function(){
-	  setClick(marker, hash)
+//	  setClick(marker, hash)
   }
         
   $(ul).listview('refresh')
