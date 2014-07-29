@@ -8,6 +8,17 @@
   display: inline-block;
   margin-right: 8px;
 }
+.control-r-icon-props:focus,
+.control-r-icon-graph:focus {
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+.control-r-icon-props,
+.control-r-icon-graph {
+  background-color: none !important;
+  border-color: none !important;
+}
 .control-r-icon-props:before {
   background-position: -44px 44px;
   background-image: url("../img/icones/sprite-stroked.png");
