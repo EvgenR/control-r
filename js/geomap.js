@@ -1,11 +1,4 @@
 define(['geoobjects', 'maplabel', 'jquery_mobile'], function(Geoobjects){
-
-  $.mobile.loading( 'show', {
-	text: 'foo',
-	textVisible: false,
-	theme: 'a',
-	html: ""
-  });
 		
   var mapboxTiles = L.tileLayer('https://{s}.tiles.mapbox.com/v3/alexru2014.ia5picp3/{z}/{x}/{y}.png', {
 	attribution: '<a href="http://www.mapbox.com/about/maps/" target="_blank">Terms &amp; Feedback</a>'
@@ -29,12 +22,23 @@ define(['geoobjects', 'maplabel', 'jquery_mobile'], function(Geoobjects){
   }
         
   $(ul).listview('refresh')
+
+  $(function(){	  
+
+	  $(body).css('visibility', 'visible')
+
+	  $.mobile.loading( 'show', {
+		text: 'foo',
+		textVisible: false,
+		theme: 'a',
+		html: ""
+	  });
+		  
+	  setTimeout(1000, function(){
+		$.mobile.loading('hide')
+	  })
 	  
-  setTimeout(1000, function(){
-    $.mobile.loading('hide')
-	window.top.location.hash = 'geo-page'
   })
-	  
 })
 
 function setClick(m, h){
