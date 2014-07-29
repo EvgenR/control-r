@@ -30,10 +30,9 @@ define(['geoobjects', 'maplabel', 'jquery_mobile'], function(Geoobjects){
         
   $(ul).listview('refresh')
 	  
-  $('#geo-page').css('visibility', 'visible')
-
   setTimeout(1000, function(){
     $.mobile.loading('hide')
+	window.top.location.hash = 'geo-page'
   })
 	  
 })
