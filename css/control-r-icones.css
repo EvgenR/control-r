@@ -35,6 +35,30 @@
   background-position: -88px 88px;
   background-image: url("../img/icones/sprite-stroked.png");
 }
+.control-r-icon-flat a:before {
+  background-position: -132px 220px;
+  background-image: url("../img/icones/sprite-unstroked-1.png");
+}
+.control-r-icon-flat a:hover:before {
+  background-position: -88px 220px;
+  background-image: url("../img/icones/sprite-unstroked-1.png");
+}
+.control-r-icon-house a:before {
+  background-position: -132px 264px;
+  background-image: url("../img/icones/sprite-unstroked-1.png");
+}
+.control-r-icon-house a:hover:before {
+  background-position: -88px 264px;
+  background-image: url("../img/icones/sprite-unstroked-1.png");
+}
+.control-r-icon-plant a:before {
+  background-position: -132px 176px;
+  background-image: url("../img/icones/sprite-unstroked-1.png");
+}
+.control-r-icon-plant a:hover:before {
+  background-position: -88px 176px;
+  background-image: url("../img/icones/sprite-unstroked-1.png");
+}
 .control-r-icon-personal a:before {
   background-position: -132px 132px;
   background-image: url("../img/icones/sprite-stroked.png");

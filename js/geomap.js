@@ -13,7 +13,7 @@ define(['geoobjects', 'maplabel', 'jquery_mobile'], function(Geoobjects){
       if(i == 'view') continue
 	  var val = Geoobjects[i]
 	  var li = $('<li></li>').appendTo(ul)
-	  $(li).addClass('control-r-icon-' + val.icon)
+	  $(li).addClass('control-r-icon').addClass('control-r-icon-' + val.icon)
 	  var a = $('<a></a>').appendTo(li)
 	  var hash = '#page-' + i
 	  $(a).text(val.label).attr('href', hash)
