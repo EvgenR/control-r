@@ -16,8 +16,8 @@
 }
 .control-r-icon-props,
 .control-r-icon-graph {
-  background-color: red !important;
-  border-color: red !important;
+  background-color: transparent !important;
+  border: 0 !important;
 }
 .control-r-icon-props:before {
   background-position: -44px 44px;
