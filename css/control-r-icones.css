@@ -27,4 +27,28 @@
   background-position: 0px 44px;
   background-image: url("../img/icones/sprite-stroked.png");
 }
+.control-r-icon-objs a:before {
+  background-position: -132px 88px;
+  background-image: url("../img/icones/sprite-stroked.png");
+}
+.control-r-icon-objs a:hover:before {
+  background-position: -88px 88px;
+  background-image: url("../img/icones/sprite-stroked.png");
+}
+.control-r-icon-personal a:before {
+  background-position: -132px 132px;
+  background-image: url("../img/icones/sprite-stroked.png");
+}
+.control-r-icon-personal a:hover:before {
+  background-position: -88px 132px;
+  background-image: url("../img/icones/sprite-stroked.png");
+}
+.control-r-icon-support a:before {
+  background-position: -132px 220px;
+  background-image: url("../img/icones/sprite-stroked.png");
+}
+.control-r-icon-support a:hover:before {
+  background-position: -88px 220px;
+  background-image: url("../img/icones/sprite-stroked.png");
+}
 
