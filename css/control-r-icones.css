@@ -8,6 +8,10 @@
   display: inline-block;
   margin-right: 8px;
 }
+h3.control-r-icon:before, li.control-r-icon:hover:before {
+  height: 5px,
+  margin: 0
+}
 .control-r-icon-props:focus,
 .control-r-icon-graph:focus {
   -moz-box-shadow: none !important;
