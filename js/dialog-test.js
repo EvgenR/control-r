@@ -1,5 +1,5 @@
 alert('Yo!')
-define(['jquery_mobile'], function(){
+define(['jquery_ui'], function(){
   $(function(){	
     $('#dialog-test').dialog()
   })
