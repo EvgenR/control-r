@@ -3,6 +3,11 @@
   height: 17px;
   display: block;
 }
+.control-r-header-collapsible:after {
+  content: "\00A0";
+  height: 17px;
+  display: block;
+}
 .control-r-icon-link:before, .control-r-icon-link:hover:before,
 .control-r-icon a:before, .control-r-icon a:hover:before {
   content: "\00A0";
