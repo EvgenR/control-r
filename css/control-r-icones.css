@@ -1,6 +1,6 @@
 .control-r-header-link:after {
   content: "\00A0";
-  height: 44px;
+  height: 17px;
   display: block;
 }
 .control-r-icon-link:before, .control-r-icon-link:hover:before,
