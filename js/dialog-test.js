@@ -1,5 +1,6 @@
 define(['jquery_ui'], function(){
   $(function(){	
-    $('.control-r-dialog-title').css('margin-bottom', '25px')
+    //$('.control-r-dialog-title').css('margin-bottom', '25px')
+	$('#dialog-test').dialog()
   })
 })
