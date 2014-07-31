@@ -25,7 +25,7 @@
 		  .ui-overlay-shadow, .ui-shadow {
 		    box-shadow: 0px 0px 12px rgba(0, 175, 167, 0.6);
 		  }
-		  .control-r-dialog-title {
+		  .control-r-dialog-title_ {
 			  color: #00AFA7;
 			  margin: -7px 3px 25px;
 			  text-shadow: 1px 1px 2px #777;
@@ -52,7 +52,7 @@
 		<a href="#popupDialog" data-rel="popup" data-position-to="window" data-transition="pop" 
 			class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-delete ui-btn-icon-left ui-btn-b">Показать диалог</a>
 		<div id='hidden-stuff' style='display: none;'>
-			<div data-role="popup" id="popupDialog" data-overlay-theme="b" data-theme="b" data-dismissible="true" style="max-width:400px;">
+			<div data-role="popup" id="popupDialog" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:600px;">
 				<!-- div data-role="header" data-theme="a">
 					<h1>Delete Page?</h1>
 				</div -->
@@ -62,6 +62,7 @@
 						<label for="slider-2">Плавно:</label>
 						<input name="slider-2" id="slider-2" data-highlight="false" min="0" max="100" value="50" type="range">
 					</form>
+					<hr>
 					<form>
 						<label for="flip-1">Дискретно:</label>
 						<select id="flip-1" name="flip-1" data-role="slider">
