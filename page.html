@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<div data-role="page" data-title="" style='overflow-y: hidden;'>
+
+		<div data-role="header" data-position="fixed" class='header-with-logo' data-theme='b'>
+			<h1>&nbsp;</h1>
+			<a href="#" data-iconpos="notext" class='control-r-icon-props'>&nbsp;</a>
+			<a href="#" data-iconpos="notext" class='control-r-icon-graph'>&nbsp;</a>
+		</div>
+
+		<div data-for-map=""></div>
+
+		<div data-role="panel" data-position-fixed="true" data-display="overlay" id="navigation" data-theme='b'>
+			<ul data-role="listview">
+			  <li data-icon="delete"><a href="#" data-rel="close" class='control-r-panel'>Настройки</a></li>
+			</ul>		
+
+			<div id="equipment-group-security" data-role='collapsible' data-iconpos='right' class="control-r-icon-security" data-inset="false">
+			  <h3>Безопасность</h3>
+			  <ul data-role="listview">
+			    <li data-eqgrp='webcam'><a href="#">Камера наблюдения</a></li>
+			  </ul>		
+			</div>
+
+			<div id="equipment-group-energy" data-role='collapsible' data-iconpos='right' class="control-r-icon-energy" data-inset="false">
+			  <h3>Энергосбережение</h3>
+			  <ul data-role="listview">
+			    <li data-eqgrp='light-inner'><a href="#">Освещение внутреннее</a></li>
+			    <li data-eqgrp='light-outer'><a href="#">Освещение внешнее</a></li>
+			    <li data-eqgrp='jack'><a href="#">Электророзетка</a></li>
+			    <li data-eqgrp='temperature-sensor'><a href="#">Термометр</a></li>
+			    <li data-eqgrp='temperature-humidity-sensor'><a href="#">Датчик температуры и влажности</a></li>
+			    <li data-eqgrp='leak-sensor'><a href="#">Датчик протечки</a></li>
+			  </ul>		
+		      <!-- fieldset data-role="controlgroup" data-iconpos="right">
+				<input id="light-inner" type="checkbox">
+				<label for="light-inner">Освещение внутреннее</label>
+			  </fieldset -->
+			</div>
+
+			<div id="equipment-group-comfort" data-role='collapsible' data-iconpos='right' class="control-r-icon-comfort" data-inset="false">
+			  <h3>Комфорт</h3>
+			  <ul data-role="listview">
+			    <li data-eqgrp='tv'><a href="#">Телевизор</a></li>
+			    <li data-eqgrp='audio'><a href="#">Музыкальный центр</a></li>
+			    <li data-eqgrp='garland'><a href="#">Гирлянда</a></li>
+			  </ul>		
+			</div>
+
+			<div id="geoobjects" data-role='collapsible' data-inset="false" data-iconpos='right' class='control-r-icon-objs'>
+				<h3>Список объектов</h3>
+				<ul data-role="listview">
+					<!-- li class='control-r-icon-home'><a href="#geo-page">К общей карте</a></li -->
+				</ul>
+			</div>
+			<ul data-role="listview" data-inset="false">
+				<li class='control-r-icon-home'><a href="#geo-page">К общей карте</a></li>
+			</ul>
+
+		</div>
+
+		<div data-role="panel" data-position="right" data-position-fixed="true" data-display="overlay" id="active-processes">
+			<ul data-role="listview">
+			  <li data-icon="delete"><a href="#" data-rel="close" class='control-r-panel'>Активные процессы</a></li>
+			</ul>		
+			<ul data-role="listview">
+			</ul>		
+		</div>
+
+	</div>
+</html>
