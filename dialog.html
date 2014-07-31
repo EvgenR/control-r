@@ -17,27 +17,8 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
 		<style>
-          .ui-page {
-            background-color: transparent;
-		  }
-		  .ui-dialog-content {
+		  .control-r--dialog {
             background-image: url('img/dialog-background.jpg');
-		  }
-		  .ui-overlay-shadow, .ui-shadow, .ui-focus {
-		    box-shadow: 0px 0px 12px rgba(0, 175, 167, 0.6);
-		  }
-		  .control-r-dialog-title {
-			  color: #00AFA7;
-			  text-shadow: 1px 1px 2px #777;
-			  margin: -7 0 25px 0 !important;
-			  border-bottom: 2px solid;
-			  padding-bottom: 5px;
-			  padding-left: 25px;
-			  padding-right: 25px;
-		  }
-		  .ui-slider-bg{
-			  background-color: #00AFA7;
-			  border-color: #00AFA7;
 		  }
         </style>
 
@@ -50,32 +31,11 @@
 				<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 		<![endif]-->
 
-		<!-- a href="#popupDialog" data-rel="popup" data-position-to="window" data-transition="pop" 
-			class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-delete ui-btn-icon-left ui-btn-b">Показать диалог</a>
-		<div id='hidden-stuff' style='display: none;'>
-			<div data-role="popup" id="popupDialog" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:600px;">
-				<div role="main" class="ui-content control-r-dialog-background">
-					<h3 class="ui-title control-r-dialog-title">Управление освещением</h3>
-					<form>
-						<label for="slider-2">Плавно:</label>
-						<input name="slider-2" id="slider-2" data-highlight="false" min="0" max="100" value="50" type="range">
-					</form>
-					<hr>
-					<form>
-						<label for="flip-1">Дискретно:</label>
-						<select id="flip-1" name="flip-1" data-role="slider">
-							<option value="off">Выкл.</option>
-							<option value="on">Вкл.</option>
-						</select>
-					</form>
-					<a href="#" class="ui-btn ui-icon-delete ui-icon-right ui-corner-all" data-rel='back'>Закрыть</a>
-				</div>
-			</div>	
-		</div -->	
-
 		<div style='display: none'>
 			<div id='dialog-test' title='Тестирование диалога'>
+				<div class='control-r-dialog'>
 				<p>I am a dialog.</p>
+				</div>
 			</div>
 		</div>
 
