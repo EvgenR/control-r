@@ -1,0 +1,10 @@
+
+.control-r-header-with-logo {
+	background-image: url('../img/logo4header.png'); 
+	background-repeat: no-repeat;
+	background-position: center top -1px;
+}
+
+.control-r-hide-on-start {
+    visibility: hidden;
+}
