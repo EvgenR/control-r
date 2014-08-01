@@ -36,10 +36,10 @@ define(['geoobjects', 'maplabel', 'jquery_mobile'], function(Geoobjects){
 		html: ""
 	  });
 		  
-	  setTimeout(2000, function(){
+	  setTimeout(function(){
 	    $(geoPageDivs).css('visibility', 'visible')
 		$.mobile.loading('hide')
-	  })
+	  }, 2000)
 	  
   })
 })
