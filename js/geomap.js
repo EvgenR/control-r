@@ -25,7 +25,9 @@ define(['geoobjects', 'maplabel', 'jquery_mobile'], function(Geoobjects){
 
   $(function(){	  
 
-	  $(body).css('visibility', 'visible')
+	  var geoPageDivs = $('.control-r-hide-on-start')
+
+	  $(geoPageDivs[0]).css('visibility', 'visible')
 
 	  $.mobile.loading( 'show', {
 		text: 'foo',
@@ -34,9 +36,9 @@ define(['geoobjects', 'maplabel', 'jquery_mobile'], function(Geoobjects){
 		html: ""
 	  });
 		  
-	  setTimeout(1000, function(){
-		$.mobile.loading('hide')
-	  })
+//	  setTimeout(1000, function(){
+//		$.mobile.loading('hide')
+//	  })
 	  
   })
 })
