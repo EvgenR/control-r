@@ -97,7 +97,9 @@ textarea {
 	background-position: center top -1px;
 }
 
-
+.control-r-hide-on-start {
+    visibility: hidden;
+}
 
 
 
