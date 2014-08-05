@@ -1,4 +1,4 @@
 control-r
 =========
 
-Control-R- Web Interfeis for Smart Home
+Control-R- Web Interface for Smart Home
