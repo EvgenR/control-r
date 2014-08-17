@@ -1,0 +1,44 @@
+<!doctype html>
+<html class="no-js" lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Тестирование диалогов</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.css">
+		<link rel="stylesheet" href="css/jquery-mobile-tune.css">
+		<link rel="stylesheet" href="css/ui-darkness/jquery-ui-1.10.4.custom.css">
+        <link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/control-r-dialog.css">
+
+		<script src="js/vendor/modernizr-2.8.0.min.js"></script>
+		<script src='js/vendor/require.js' data-main='js/dialog'></script>
+	</head>
+	<body>
+
+		<button id='show-dimmer-diaog'>Диммер</button>
+		<button id='show-lights-diaog'>Бегущие огни</button>
+
+		<div style='display: none'>
+			<div id='control-r-dialog'>
+				<div class="control-r-dialog-tabs">
+					<ul>
+						<li><a href="#tabs-1"><img src="img/dialogs/d1.png"></a></li>
+						<li><a href="#tabs-2"></a></li>
+					</ul>
+					<div class='control-r-dialog-tab'>
+						<div>
+							<input id="id" type="text"   placeholder='ID' >
+							<input id="name"  type="text"  placeholder='Название' >
+						</div>
+					</div>
+					<div class='control-r-dialog-tab'>
+						&nbsp;
+					</div>
+				</div><!-- End of tabs -->
+			</div><!-- End of dialog -->
+		</div>
+	</body>
+</html>
