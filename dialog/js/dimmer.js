@@ -1,0 +1,1 @@
+alert('Dimmer is loaded!')
