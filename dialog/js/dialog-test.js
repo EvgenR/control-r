@@ -7,7 +7,7 @@ define(['jquery_ui'], function(){
 			$(dlg).dialog({width: 640, height: 480})
 			var tab2 = $(dlg).find('.control-r-dialog-tab')[1]
 			$(tab2).load(dlgType + '.html', function(){
-			  require(dlgType)
+			  require([dlgType])
 			})
 		})    
 	})
