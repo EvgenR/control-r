@@ -1,9 +1,11 @@
 define(['jquery_ui'], function(){
 	$(function(){	
-		$('button').button().click(function(){
-			var dlgType = $(this).attr('id')
-		    var dlg = $('#control-r-dialog').clone()
+		$('a').click(function(){
+			var dlgType = $(this).attr('href').substring(1)
+		    var dlg = $('.control-r-dialog').clone()
+			var tabs = $(dlg).find('.control-r-dialog-tabs').tabs()
 			$(dlg).dialog()
+			alert(dlgType)
 		})    
 	})
 })
