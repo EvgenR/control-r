@@ -17,6 +17,8 @@ define(['equipment'], function(eq){
 			if(equipment[val].marker){alert('Это оборудование уже привязано к маркеру.'); return false}  
 		    $(idInput).prop('disabled', true)  
 			alert('Красаучег!')
+			var title = equipment[val].name
+			if(title) $(dlg).dialog('option', 'title', title)
 		})
 		$(nameInput).keyup(function(){
 			var val = $(nameInput).val().trim()
