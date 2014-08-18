@@ -1,5 +1,5 @@
-.control-r-dialog-tabs .ui-tabs-anchor {
-  content:url(../images/dialogs/tab-1.png)
+.control-r-dialog-tabs .ui-tabs-anchor:before {
+  content:url(../img/dialogs/tab-1.png)
 }
 
 
