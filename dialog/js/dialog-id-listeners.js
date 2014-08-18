@@ -18,8 +18,9 @@ define(['equipment'], function(eq){
 		    $(idInput).prop('disabled', true)  
 			alert('Красаучег!')
 		})
-		$(idInput).keyup(function(){
-			var val = $(nameInput).val()
+		$(nameInput).keyup(function(){
+			var val = $(nameInput).val().trim()
+			if(!val) val = 'Новое устройство'
 			$(dlg).dialog('option', 'title', val)
 		})
 	}
