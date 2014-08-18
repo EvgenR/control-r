@@ -9,3 +9,7 @@
 .control-r-dialog-tabs input {
   text-shadow none;
 }
+
+.ui-dialog {
+  background: url('images/ui-bg_gloss-wave_55_3d3d3d_500x100.png') repeat-x scroll 50% top #3D3D3D !important;
+}
