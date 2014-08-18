@@ -9,8 +9,7 @@ requirejs.config({
 
   shim: {
     jquery_mobile: {deps: ['jquery']},
-//    jquery_ui:     {deps: ['jquery_mobile']},
-    jquery_ui:     {deps: ['jquery']},
+    jquery_ui:     {deps: ['jquery_mobile']},
   }
 })
 
