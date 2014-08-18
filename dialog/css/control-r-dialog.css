@@ -1,3 +1,11 @@
+.control-r-dialog-buttons {
+  margin-top: 15px;
+}
+
+.control-r-dialog {
+  background-color: #1d1d1d;
+}
+
 .control-r-dialog-tabs input {
-  color: black;
+  text-shadow none;
 }
