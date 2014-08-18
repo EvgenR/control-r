@@ -1,3 +1,8 @@
+.control-r-dialog-tabs .ui-tabs-anchor:before {
+  url(../images/dialogs/tab-1.png)
+}
+
+
 /*
 #tabs .ui-widget-header{
 	background: #3d3d3d;
