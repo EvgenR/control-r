@@ -1,5 +1,5 @@
 define(['equipment'], function(eq){
-	return function(inputs){
+	return function(inputs, dlg){
 		if(!window.equipment) window.equipment = eq
 	    var equipment = window.equipment
 		var idInput   = inputs[0]	  
@@ -8,7 +8,8 @@ define(['equipment'], function(eq){
 		$(idInput).keyup(function(){
 			keyupCounter++
 			if(keyupCounter > 20){
-              alert('Каким же надо быть идиотом, чтобы нее справиться с простой задачей забить в текстовое поле с бумажки несколько букв и цифр1')
+              alert('Каким же надо быть идиотом, чтобы нее справиться с простой задачей забить в текстовое поле с бумажки несколько букв и цифр!')
+			  keyupCounter = 0
 			  return
 			}
 			var val = $(idInput).val()
@@ -16,6 +17,10 @@ define(['equipment'], function(eq){
 			if(equipment[val].marker){alert('Это оборудование уже привязано к маркеру.'); return false}  
 		    $(idInput).prop('disabled', true)  
 			alert('Красаучег!')
+		})
+		$(idInput).keyup(function(){
+			var val = $(nameInput).val()
+			$(dlg).dialog('opton', 'title', val)
 		})
 	}
 })

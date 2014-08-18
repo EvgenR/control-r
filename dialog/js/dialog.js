@@ -17,7 +17,7 @@ define(['dialog-id-listeners', 'jquery_ui'], function(setInputListeners){
 			$(tabContents[1]).load(dialogType + '.html', function(dat){
 			  require([dialogType])
 			})
-		    setInputListeners($(tabContents[0]).find('input'))
+		    setInputListeners($(tabContents[0]).find('input'), dlg)
 		})    
 	})
 })
