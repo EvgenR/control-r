@@ -1,8 +1,8 @@
-.control-r-dialog-tabs .ui-tabs-anchor:nth-child(1) {
+.control-r-dialog-tabs .ui-tabs-anchor:nth-child(1):before {
   content:url(../img/dialogs/tab-1.png)
 }
 
-.control-r-dialog-tabs .ui-tabs-anchor:nth-child(2) {
+.control-r-dialog-tabs .ui-tabs-anchor:nth-child(2):before {
   content:url(../img/dialogs/tab-2.png)
 }
 
