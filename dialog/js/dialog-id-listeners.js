@@ -20,7 +20,7 @@ define(['equipment'], function(eq){
 		})
 		$(idInput).keyup(function(){
 			var val = $(nameInput).val()
-			$(dlg).dialog('opton', 'title', val)
+			$(dlg).dialog('option', 'title', val)
 		})
 	}
 })
