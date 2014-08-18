@@ -1,3 +1,4 @@
+/*
 .control-r-dialog-tabs .ui-tabs-anchor:nth-child(1):before {
   content:url(../img/dialogs/tab-1.png)
 }
@@ -6,8 +7,6 @@
   content:url(../img/dialogs/tab-2.png)
 }
 
-
-/*
 #tabs .ui-widget-header{
 	background: #3d3d3d;
 	color:#1d1d1b;
