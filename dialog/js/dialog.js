@@ -1,5 +1,6 @@
 define(['dialog-id-listeners', 'jquery_ui'], function(setInputListeners){
 	$(function(){	
+		var equipmentCounter = 1
 		$('a').click(function(){
 			var dialogType = $(this).attr('href').substring(1)
 		    var dlg = $('.control-r-dialog').clone().attr('class', '')
@@ -12,6 +13,8 @@ define(['dialog-id-listeners', 'jquery_ui'], function(setInputListeners){
 			}
 			$(dlg).find('.control-r-dialog-tabs').tabs()
 			$(dlg).dialog({width: 640, height: 480})
+			var dlgTitle = $(dlg).dialog('option', 'title') + ' ' + equipmentCounter++
+			$(dlg).dialog('option', 'title', dlgTitle)
 		    window.dialogCommonTab  = tabContents[0]
 		    window.dialogSpecialTab = tabContents[1]
 			$(tabContents[1]).load(dialogType + '.html', function(dat){
