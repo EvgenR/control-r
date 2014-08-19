@@ -1,1 +1,1 @@
-alert('Dimmer is loaded!')
+$(window.dialogSpecialTab).find('.control-r-slider').slider()

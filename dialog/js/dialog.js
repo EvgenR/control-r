@@ -15,11 +15,11 @@ define(['dialog-id-listeners', 'jquery_ui'], function(setInputListeners){
 			$(dlg).dialog({width: 640, height: 480})
 			var dlgTitle = $(dlg).dialog('option', 'title') + ' ' + equipmentCounter++
 			$(dlg).dialog('option', 'title', dlgTitle)
-		    window.dialogCommonTab  = tabContents[0]
-		    window.dialogSpecialTab = tabContents[1]
 			$(tabContents[1]).load(dialogType + '.html', function(dat){
 			  require([dialogType])
 			})
+		    window.dialogCommonTab  = tabContents[0]
+		    window.dialogSpecialTab = tabContents[1]
 		    setInputListeners($(tabContents[0]).find('input'), dlg)
 		})    
 	})
