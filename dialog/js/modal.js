@@ -1,5 +1,4 @@
 requirejs.config({
-  urlArgs: "bust=" + (new Date()).getTime(),		
   baseUrl: 'js',
   paths: {
 	jquery:        'https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min',
@@ -13,5 +12,5 @@ requirejs.config({
   }
 })
 
-require(['dialog'])
+require(['modal-control'])
 

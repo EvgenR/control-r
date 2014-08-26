@@ -8,7 +8,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.css">
-        <link rel="stylesheet" href="css/normalize.css">
+
+                <link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/control-r-custom/jquery-ui.min.css">
 		<link rel="stylesheet" href="css/control-r-dialog.css">
 
@@ -17,27 +18,37 @@
 	</head>
 	<body>
 
+		<a href='#empty'>Empty</a>
+		<br>
 		<a href='#dimmer'>Диммер</a>
+		<br>
+		<a href='#switch'>Выключатель</a>
 		<br>
 		<a href='#lights'>Бегущие огни</a>
 
 		<div style='display: none'>
-			<div class='control-r-dialog' title='Новое устройство' data-theme='b'>
+			<div class='control-r-dialog' title='Новое устройство'>
+
 				<div class="control-r-dialog-tabs">
 					<ul>
-						<li><a href="#"><img src='img/dialogs/tab-1.png'></a></li>
-						<li><a href="#"><img src='img/dialogs/tab-2.png'></a></li>
+						<li><a href="#"><div class='tab-z main-tab'></div></a></li>
+						<li><a href="#"><div class='tab-z work-tab'></div></a></li>
 					</ul>
 					<div class='control-r-dialog-tab'>
-						<div>
-							<input id="id" type="text"   placeholder='ID' >
-							<input id="name"  type="text"  placeholder='Название' >
-						</div>
-						<div class='control-r-dialog-buttons'>
-							<button data-theme='b'>Сохранить настройки</button>
-							<button data-theme='b'>Отменить изменения</button>
-							<button data-theme='b'>Удалить маркер</button>
-						</div>
+                                                <div>
+                                                    <input id="id" type="text"   placeholder='ID' >
+                                                    <input id="name"  type="text"  placeholder='Название' >
+                                                </div>
+                                                <div id="onoff1" class='on-off' data-on='0'></div>
+                                                <div class='control-long'>
+                                                    <button id="save" data-on='2'><img src="./img/icones/node-b.png"></button>Сохранить узел
+                                                </div>
+                                                <div class='control-long'>
+                                                    <button  id="del"  data-on='3'><img src="./img/icones/marker-b.png"></button>Удалить маркер
+                                                </div>
+                                                <div class='control-long'>
+                                                    <button  id="res"  data-on='0'><img src="./img/icones/setting-b.png"></button>Сбросить настройки
+                                                </div>
 					</div>
 					<div class='control-r-dialog-tab'>Special content will be here</div>
 				</div> <!-- End of tabs   -->
