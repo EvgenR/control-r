@@ -39,7 +39,7 @@
 						</li>
 					</ul>		
 
-					<div id="geoobjects" data-role='collapsible' data-inset="false" data-iconpos='right' class='control-r-header-collapsible'>
+					<div id="geo-objects" data-role='collapsible' data-inset="false" data-iconpos='right' class='control-r-header-collapsible'>
 						<h3 class='control-r-icon control-r-icon-objs' data-i18n-text='List of objects'>&nbsp;</h3>
 						<ul data-role="listview"></ul>
 					</div>
@@ -78,6 +78,79 @@
 					<div class='control-r-dialog-tab'>&nbsp;</div>
 				</div> <!-- End of tabs   -->
 			</div>     <!-- End of dialog -->
+			<div data-role="page" data-title="" style='overflow-y: hidden;' id='page-template'>
+
+				<div data-role="header" data-position="fixed" class='header-with-logo' data-theme='b'>
+					<h1>&nbsp;</h1>
+					<a href="#" data-iconpos="notext" class='control-r-icon-props'>&nbsp;</a>
+					<a href="#" data-iconpos="notext" class='control-r-icon-graph'>&nbsp;</a>
+				</div>
+
+				<div id='map-of-object'></div>
+
+				<div data-role="panel" data-position-fixed="true" data-display="overlay" id="navigation" data-theme='b'>
+					<ul data-role="listview">
+						<li data-icon="delete"><a href="#" data-rel="close" class='control-r-panel'>Настройки</a></li>
+					</ul>		
+				<br>
+
+				<div id="equipment-group-security" data-role='collapsible' data-iconpos='right' class="control-r-icon-security" data-inset="false">
+					<h3>Безопасность</h3>
+					<ul data-role="listview">
+						<li data-eqgrp='webcam'><a href="#">Камера наблюдения</a></li>
+					</ul>		
+				</div>
+
+				<div id="equipment-group-energy" data-role='collapsible' data-iconpos='right' class="control-r-icon-energy" data-inset="false">
+				<h3>Энергосбережение</h3>
+				<ul data-role="listview">
+				<li data-eqgrp='light-inner'><a href="#">Освещение внутреннее</a></li>
+				<li data-eqgrp='light-outer'><a href="#">Освещение внешнее</a></li>
+				<li data-eqgrp='jack'><a href="#">Электророзетка</a></li>
+				<li data-eqgrp='temperature-sensor'><a href="#">Термометр</a></li>
+				<li data-eqgrp='temperature-humidity-sensor'><a href="#">Датчик температуры и влажности</a></li>
+				<li data-eqgrp='leak-sensor'><a href="#">Датчик протечки</a></li>
+				</ul>		
+				</div>
+
+				<div id="equipment-group-comfort" data-role='collapsible' data-iconpos='right' class="control-r-icon-comfort" data-inset="false">
+				<h3>Комфорт</h3>
+				<ul data-role="listview">
+				<li data-eqgrp='tv'><a href="#">Телевизор</a></li>
+				<li data-eqgrp='audio'><a href="#">Музыкальный центр</a></li>
+				<li data-eqgrp='garland'><a href="#">Гирлянда</a></li>
+				</ul>		
+				</div>
+
+				<div id="geoobjects" data-role='collapsible' data-inset="false" data-iconpos='right' class='control-r-icon-objs'>
+					<h3>Список объектов</h3>
+					<ul data-role="listview"></ul>
+				</div>
+				<ul data-role="listview" data-inset="false">
+				<li class='control-r-icon-home'><a href="#geo-page">К общей карте</a></li>
+				</ul>
+
+				<div id="scheme-layers" data-role='collapsible' data-inset="false">
+					<h3>Схемы помещений объекта</h3>
+					<ul data-role="listview">
+					<li><a href="#">Цокольный этаж</a></li>
+					<li><a href="#">Первый этаж</a></li>
+					<li><a href="#">Второй этаж</a></li>
+					<li><a href="#">Третий этаж</a></li>
+					<li><a href="#">Четвертый этаж</a></li>
+					</ul>
+				</div>
+				</div>
+
+				<div data-role="panel" data-position="right" data-position-fixed="true" data-display="overlay" id="active-processes">
+				<ul data-role="listview">
+				<li data-icon="delete"><a href="#" data-rel="close" class='control-r-panel'>Активные процессы</a></li>
+				</ul>		
+				<ul data-role="listview" class='wheelable'>
+				</ul>		
+				</div>
+
+			</div>
 		</div>         <!-- End of hidden -->
 	</body>
 </html>
