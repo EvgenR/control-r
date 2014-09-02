@@ -1,57 +1,83 @@
 <!doctype html>
 <html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Control-R: web interface for smart houses</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Control-R: software for smart houses</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<link rel='stylesheet' href='https://api.tiles.mapbox.com/mapbox.js/v1.6.4/mapbox.css'>
-		<link rel='stylesheet' href='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-label/v0.2.1/leaflet.label.css'>
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.css">
-		<link rel="stylesheet" href="css/jquery-mobile-tune.css">
-		<link rel="stylesheet" href="css/ui-darkness/jquery-ui-1.10.4.custom.css">
-		<link rel="stylesheet" href="css/control-r-icones.css">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/control-r.css">
 
-        <script src="js/vendor/modernizr-2.8.0.min.js"></script>
-        <script src='js/vendor/require.js' data-main='js/main'></script>
-    </head>
-	<body style='overflow-y: hidden'>
+        <link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/control-r-custom/jquery-ui.min.css">
+		<link rel="stylesheet" href="css/control-r-main.css">
+		<link rel="stylesheet" href="css/control-r-dialog.css">
+
+		<script src="js/vendor/modernizr-2.8.0.min.js"></script>
+		<script src='js/vendor/require.js' data-main='js/main'></script>
+	</head>
+	<body>
 
 		<!--[if lt IE 8]>
 				<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 		<![endif]-->
 
-		<div data-role='page' id='geo-page' style='overflow-y: hidden;'>
+		<div data-role='page' id='geo-page'>
 
-			<div data-role='header' data-position='fixed' data-title='География объектов' class='control-r-header-with-logo control-r-hide-on-start' data-theme='b'>
+			<div data-role='header' data-position='fixed' data-i18n-title='Geography of objects' class='control-r-header-with-logo control-r-hide-on-start' data-theme='b'>
 				<h1>&nbsp;</h1>
 				<a href="#nav-panel" data-iconpos="notext" class='control-r-icon-link control-r-icon-props' data-icon='false' data-shadow='false'></a>
 			</div>
 
-			<div id='geomap' class='control-r-hide-on-start'></div>
+			<div id='geo-map' class='control-r-hide-on-start'></div>
 
 			<div data-role="panel" data-position-fixed="true" data-display="overlay" id="nav-panel" data-theme='b' class='control-r-hide-on-start'>
 					<ul data-role="listview" class='control-r-header-link'>
 						<li data-icon="delete">
-						  <a href="#" data-rel="close" data-icon='delete' data-iconpos='right' class='control-r-header-link-text'>Общие настройки</a>
+						  <a href="#" data-rel="close" data-icon='delete' data-iconpos='right' class='control-r-header-link-text' data-i18-text='Common settings'>&nbsp;</a>
 						</li>
 					</ul>		
 
 					<div id="geoobjects" data-role='collapsible' data-inset="false" data-iconpos='right' class='control-r-header-collapsible'>
-						<h3 class='control-r-icon control-r-icon-objs'>Список объектов</h3>
+						<h3 class='control-r-icon control-r-icon-objs' data-i18n-text='List of objects'>&nbsp;</h3>
 						<ul data-role="listview"></ul>
 					</div>
 
 					<ul data-role="listview">
-						<li class='control-r-icon control-r-icon-personal'><a href='#'>Персональные данные</a></li>
-						<li class='control-r-icon control-r-icon-support'><a href='#'>Техподдержка</a></li>
+						<li class='control-r-icon control-r-icon-personal' data-i18n-text='Personal data'><a href='#'>&nbsp;</a></li>
+						<li class='control-r-icon control-r-icon-support'><a href='#' data-i18-text='Technical support'>&nbsp;</a></li>
 					</ul>
 			</div>
 		</div>
+
+		<div id='hidden-stuff'>
+			<div class='control-r-dialog' data-i18n-title='New device'>
+
+				<div class="control-r-dialog-tabs">
+					<ul>
+						<li><a href="#"><div class='tab-z main-tab'></div></a></li>
+						<li><a href="#"><div class='tab-z work-tab'></div></a></li>
+					</ul>
+					<div class='control-r-dialog-tab'>
+                                                <div>
+                                                    <input id="id" type="text"   data-i18n-placeholder='ID' >
+                                                    <input id="name"  type="text"  data-i18n-placeholder='Name' >
+                                                </div>
+                                                <div id="onoff1" class='on-off' data-on='0'></div>
+                                                <div class='control-long' data-i18n-text='Save the node'>
+                                                    <button id="save" data-on='2'><img src="./img/icones/node-bc.png"></button>
+                                                </div>
+                                                <div class='control-long' data-i18n-text='Delete marker'>
+                                                    <button  id="del"  data-on='3'><img src="./img/icones/marker-bc.png"></button>
+                                                </div>
+                                                <div class='control-long' data-i18n-text='Discard settings'>
+                                                    <button  id="res"  data-on='0'><img src="./img/icones/setting-bc.png"></button>
+                                                </div>
+					</div>
+					<div class='control-r-dialog-tab'>&nbsp;</div>
+				</div> <!-- End of tabs   -->
+			</div>     <!-- End of dialog -->
+		</div>         <!-- End of hidden -->
 	</body>
 </html>
