@@ -14,5 +14,5 @@ requirejs.config({
   }
 })
 
-require(['i18n'])
+require(['pages'])
 

@@ -1,2 +1,3 @@
-ID (for modal template) = ID
+List of objects           = English rules!
+ID (for modal template)   = ID
 Name (for modal template) = Name
