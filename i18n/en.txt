@@ -1,0 +1,2 @@
+ID (for modal template) = ID
+Name (for modal template) = Name

@@ -1,3 +1,7 @@
 body, #geo-page {
   overflow-y: hidden;
 }
+
+#control-r-hidden-stuff {
+  display: none;
+}

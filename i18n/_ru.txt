@@ -1,0 +1,9 @@
+Geography of objects
+List of objects
+Personal data
+New device
+ID (for modal template)
+Name (for modal template)
+Save the node
+Delete marker
+Discard settings

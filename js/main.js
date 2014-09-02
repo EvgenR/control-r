@@ -8,6 +8,7 @@ requirejs.config({
   },
 
   shim: {
+    i18n:          {deps: ['jquery']},
     jquery_mobile: {deps: ['jquery']},
     jquery_ui:     {deps: ['jquery_mobile']},
   }
