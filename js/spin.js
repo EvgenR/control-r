@@ -1,5 +1,7 @@
 $(function(){	  
 
+  alert('spin')		
+
   var geoPageDivs = $('.control-r-hide-on-start')
 
   $(geoPageDivs[0]).css('visibility', 'visible')
