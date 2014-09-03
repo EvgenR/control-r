@@ -5,3 +5,7 @@ body, #geo-page {
 #control-r-hidden-stuff {
   display: none;
 }
+
+.control-r-hide-on-start {
+    visibility: hidden;
+}
