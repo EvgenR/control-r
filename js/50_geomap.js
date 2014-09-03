@@ -1,5 +1,5 @@
-define(['geoobjects', 'maplabel'], function(Geoobjects){
-		
+define(['21_geoobjects'], function(Geoobjects){
+
   var mapboxTiles = L.tileLayer('https://{s}.tiles.mapbox.com/v3/alexru2014.ia5picp3/{z}/{x}/{y}.png', {
 	attribution: '<a href="http://www.mapbox.com/about/maps/" target="_blank">Terms &amp; Feedback</a>'
   });
@@ -7,19 +7,15 @@ define(['geoobjects', 'maplabel'], function(Geoobjects){
   var mapDiv = $('#geo-map').height($(window).height())[0]		
   var map = L.map(mapDiv, {zoomControl: false}).addLayer(mapboxTiles).setView([Geoobjects.view.lat, Geoobjects.view.lng], Geoobjects.view.zoom);
 
-  var ul = $('#geoobjects ul')
 
   for(var i in Geoobjects){
       if(i == 'view') continue
-	  var val = Geoobjects[i]
-	  var li = $('<li></li>').appendTo(ul)
-	  $(li).addClass('control-r-icon').addClass('control-r-icon-' + val.icon)
-	  var a = $('<a></a>').appendTo(li)
+  	  var val  = Geoobjects[i]
 	  var hash = '#page-' + i
-	  $(a).text(val.label).attr('href', hash)
-	  var marker = L.marker([val.lat, val.lng]).bindLabel(val.label, {noHide: true}).addTo(map) //.on('click', function(){
-//	  setClick(marker, hash)
+	  //var marker = L.marker([val.lat, val.lng]).bindLabel(val.label, {noHide: true}).addTo(map) //.on('click', function(){
+	  //setClick(marker, hash)
   }
+  $.mobile.loading('hide')
 })
 
 function setClick(m, h){

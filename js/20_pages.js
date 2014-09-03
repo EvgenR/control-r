@@ -1,4 +1,5 @@
 define(['21_geoobjects', 'jquery'], function(Geoobjects){
+	window.control_r_geoobjects = Geoobjects	
 	var geoPage = $('#geo-page')
 	var ul = $('#geo-objects ul')
 	var pageTempl = $('.page-template')[0]
