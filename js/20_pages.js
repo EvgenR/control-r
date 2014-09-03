@@ -1,4 +1,4 @@
-define(['geoobjects', 'jquery'], function(Geoobjects){
+define(['21_geoobjects', 'jquery'], function(Geoobjects){
 	var geoPage = $('#geo-page')
 	var ul = $('#geo-objects ul')
 	var pageTempl = $('.page-template')[0]
@@ -18,5 +18,5 @@ define(['geoobjects', 'jquery'], function(Geoobjects){
 		  $(anchors[j]).attr('href', '#' + id + '-' + i)
 		}
 	}
-	require(['i18n'])
+	require(['30_i18n'])
 })

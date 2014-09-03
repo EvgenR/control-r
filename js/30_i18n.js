@@ -18,7 +18,7 @@ function loadLang(lng){
 		window.control_r_i18n[key] = val
 	  } 
 	  controlRLocalize(i18nable)
-	  require(['jquery_mobile', 'spin'])
+	  require(['40_spin'])
 	}).fail(function(){loadLang('en')})
 }
 
