@@ -15,6 +15,7 @@ define(['jquery_mobile'], function(){
 	  setTimeout(function(){
 		$(geoPageDivs).css('visibility', 'visible')
 		$.mobile.loading('hide')
+		require['50_geomap']
 	  }, 2000)
 	  
 	})
