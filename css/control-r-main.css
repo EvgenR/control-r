@@ -9,3 +9,7 @@ body, #geo-page {
 .control-r-hide-on-start {
     visibility: hidden;
 }
+
+.control-r-header-link {
+    margin-bottom: 15px;
+}
