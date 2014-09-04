@@ -10,6 +10,6 @@ body, #geo-page {
     visibility: hidden;
 }
 
-.control-r-header-link {
-    margin-bottom: 15px;
+.control-r-header-link-gutter {
+    height: 15px;
 }

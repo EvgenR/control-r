@@ -13,9 +13,9 @@ define(['jquery_mobile'], function(){
 	  });
 		  
 	  setTimeout(function(){
+        //require(['geomap'])
 		$(geoPageDivs).css('visibility', 'visible')
-        require(['geomap'])
-	  }, 2000)
+	  }, 100)
 	  
 	})
 })
