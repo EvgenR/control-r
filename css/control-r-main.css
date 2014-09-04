@@ -13,3 +13,9 @@ body, #geo-page {
 .control-r-header-link-gutter {
     height: 15px;
 }
+
+.control-r-header-with-logo {
+	background-image: url('../img/logo-header.png'); 
+	background-repeat: no-repeat;
+	background-position: center top -1px;
+}
