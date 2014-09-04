@@ -13,6 +13,8 @@ define(['jquery_mobile'], function(){
 	  });
 		  
 	  setTimeout(function(){
+        require(['wheel'])
+        require(['dragdrop'])
         //require(['geomap'])
 		$(geoPageDivs).css('visibility', 'visible')
 	  }, 100)
