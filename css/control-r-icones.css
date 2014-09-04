@@ -1,18 +1,47 @@
-.control-r-header-link-text {
-	font-size: 14pt;
-}
-.control-r-header-link:after {
-  content: "\00A0";
-  height: 17px;
-  display: block;
-}
-.control-r-header-collapsible:after {
-  content: "\00A0";
-  height: 17px;
-  display: block;
-}
-.control-r-icon-link:before, .control-r-icon-link:hover:before,
-.control-r-icon a:before, .control-r-icon a:hover:before {
+.control-r-icon-props:before,
+.control-r-icon-props:hover:before,
+.control-r-icon-graph:before,
+.control-r-icon-graph:hover:before,
+.control-r-icon-objs a:before,
+.control-r-icon-objs a:hover:before,
+.control-r-icon-flat a:before,
+.control-r-icon-flat a:hover:before,
+.control-r-icon-house a:before,
+.control-r-icon-house a:hover:before,
+.control-r-icon-plant a:before,
+.control-r-icon-plant a:hover:before,
+.control-r-icon-personal a:before,
+.control-r-icon-personal a:hover:before,
+.control-r-icon-support a:before,
+.control-r-icon-support a:hover:before,
+.control-r-icon-security h3 a:before,
+.control-r-icon-security h3 a:hover:before,
+.control-r-icon-comfort h3 a:before,
+.control-r-icon-comfort h3 a:hover:before,
+.control-r-icon-energy h3 a:before,
+.control-r-icon-energy h3 a:hover:before,
+.control-r-icon-home a:before,
+.control-r-icon-home a:hover:before,
+.control-r-icon-tv a:before,
+.control-r-icon-tv a:hover:before,
+.control-r-icon-webcam a:before,
+.control-r-icon-webcam a:hover:before,
+.control-r-icon-light-inner a:before,
+.control-r-icon-light-inner a:hover:before,
+.control-r-icon-light-outer a:before,
+.control-r-icon-light-outer a:hover:before,
+.control-r-icon-jack a:before,
+.control-r-icon-jack a:hover:before,
+.control-r-icon-temperature-humidity-sensor a:before,
+.control-r-icon-temperature-humidity-sensor a:hover:before,
+.control-r-icon-temperature-sensor a:before,
+.control-r-icon-temperature-sensor a:hover:before,
+.control-r-icon-leak-sensor a:before,
+.control-r-icon-leak-sensor a:hover:before,
+.control-r-icon-audio a:before,
+.control-r-icon-audio a:hover:before,
+.control-r-icon-garland a:before,
+.control-r-icon-garland a:hover:before {
   content: "\00A0";
   width: 44px;
   line-height: 44px;
@@ -20,6 +49,7 @@
   margin-top: -22px;
   display: inline-block;
   margin-right: 8px;
+  background-position: 44px 0px;
 }
 .control-r-icon-props:focus,
 .control-r-icon-graph:focus {
@@ -29,8 +59,8 @@
 }
 .control-r-icon-props,
 .control-r-icon-graph {
-  background-color: transparent !important;
-  border: 0 !important;
+  background-color: #1d1d1d !important;
+  border-color: #1d1d1d !important;
 }
 .control-r-icon-props:before {
   background-position: -44px 44px;
@@ -38,6 +68,14 @@
 }
 .control-r-icon-props:hover:before {
   background-position: 0px 44px;
+  background-image: url("../img/icones/sprite-stroked.png");
+}
+.control-r-icon-graph:before {
+  background-position: -44px 88px;
+  background-image: url("../img/icones/sprite-stroked.png");
+}
+.control-r-icon-graph:hover:before {
+  background-position: 0px 88px;
   background-image: url("../img/icones/sprite-stroked.png");
 }
 .control-r-icon-objs a:before {
@@ -88,4 +126,115 @@
   background-position: -88px 220px;
   background-image: url("../img/icones/sprite-stroked.png");
 }
-
+.control-r-icon-security h3 a:before {
+  background-position: -44px 176px;
+  background-image: url("../img/icones/sprite-stroked.png");
+}
+.control-r-icon-security h3 a:hover:before {
+  background-position: 0px 176px;
+  background-image: url("../img/icones/sprite-stroked.png");
+}
+.control-r-icon-comfort h3 a:before {
+  background-position: -44px 220px;
+  background-image: url("../img/icones/sprite-stroked.png");
+}
+.control-r-icon-comfort h3 a:hover:before {
+  background-position: 0px 220px;
+  background-image: url("../img/icones/sprite-stroked.png");
+}
+.control-r-icon-energy h3 a:before {
+  background-position: -44px 132px;
+  background-image: url("../img/icones/sprite-stroked.png");
+}
+.control-r-icon-energy h3 a:hover:before {
+  background-position: 0px 132px;
+  background-image: url("../img/icones/sprite-stroked.png");
+}
+.control-r-icon-home a:before {
+  background-position: -132px 176px;
+  background-image: url("../img/icones/sprite-stroked.png");
+}
+.control-r-icon-home a:hover:before {
+  background-position: -88px 176px;
+  background-image: url("../img/icones/sprite-stroked.png");
+}
+.control-r-icon-tv a:before {
+  background-position: -220px 176px;
+  background-image: url("../img/icones/sprite-unstroked-1.png");
+}
+.control-r-icon-tv a:hover:before {
+  background-position: -176px 176px;
+  background-image: url("../img/icones/sprite-unstroked-1.png");
+}
+.control-r-icon-webcam a:before {
+  background-position: -308px 264px;
+  background-image: url("../img/icones/sprite-unstroked-1.png");
+}
+.control-r-icon-webcam a:hover:before {
+  background-position: -264px 264px;
+  background-image: url("../img/icones/sprite-unstroked-1.png");
+}
+.control-r-icon-light-inner a:before {
+  background-position: -44px 44px;
+  background-image: url("../img/icones/sprite-unstroked-1.png");
+}
+.control-r-icon-light-inner a:hover:before {
+  background-position: 0px 44px;
+  background-image: url("../img/icones/sprite-unstroked-1.png");
+}
+.control-r-icon-light-outer a:before {
+  background-position: -44px 88px;
+  background-image: url("../img/icones/sprite-unstroked-1.png");
+}
+.control-r-icon-light-outer a:hover:before {
+  background-position: 0px 88px;
+  background-image: url("../img/icones/sprite-unstroked-1.png");
+}
+.control-r-icon-jack a:before {
+  background-position: -44px 132px;
+  background-image: url("../img/icones/sprite-unstroked-1.png");
+}
+.control-r-icon-jack a:hover:before {
+  background-position: 0px 132px;
+  background-image: url("../img/icones/sprite-unstroked-1.png");
+}
+.control-r-icon-temperature-humidity-sensor a:before {
+  background-position: -44px 176px;
+  background-image: url("../img/icones/sprite-unstroked-1.png");
+}
+.control-r-icon-temperature-humidity-sensor a:hover:before {
+  background-position: 0px 176px;
+  background-image: url("../img/icones/sprite-unstroked-1.png");
+}
+.control-r-icon-temperature-sensor a:before {
+  background-position: -44px 220px;
+  background-image: url("../img/icones/sprite-unstroked-1.png");
+}
+.control-r-icon-temperature-sensor a:hover:before {
+  background-position: 0px 220px;
+  background-image: url("../img/icones/sprite-unstroked-1.png");
+}
+.control-r-icon-leak-sensor a:before {
+  background-position: -44px 264px;
+  background-image: url("../img/icones/sprite-unstroked-1.png");
+}
+.control-r-icon-leak-sensor a:hover:before {
+  background-position: 0px 264px;
+  background-image: url("../img/icones/sprite-unstroked-1.png");
+}
+.control-r-icon-audio a:before {
+  background-position: -220px 220px;
+  background-image: url("../img/icones/sprite-unstroked-1.png");
+}
+.control-r-icon-audio a:hover:before {
+  background-position: -176px 220px;
+  background-image: url("../img/icones/sprite-unstroked-1.png");
+}
+.control-r-icon-garland a:before {
+  background-position: -220px 264px;
+  background-image: url("../img/icones/sprite-unstroked-1.png");
+}
+.control-r-icon-garland a:hover:before {
+  background-position: -176px 264px;
+  background-image: url("../img/icones/sprite-unstroked-1.png");
+}
