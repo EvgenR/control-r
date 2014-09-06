@@ -4,7 +4,7 @@
 
 .ui-slider:before{
         content: " ";  
-                                         background: url('/img/modals_ico/slider-rules_v.png') no-repeat;
+                                         background: url('../img/modals_ico/slider-rules_v.png') no-repeat;
                                           height: 140px;  
                                         width: 6px;  
                                          display: block; 
@@ -26,11 +26,11 @@
     }
     
    .dimmer  .ui-slider-range{   
-                                    background:url("/img/modals_ico/input_back_v.png") repeat-y scroll -11px 0 rgba(0, 0, 0, 0);
+                                    background:url("../img/modals_ico/input_back_v.png") repeat-y scroll -11px 0 rgba(0, 0, 0, 0);
                                          border-radius: 5px;        
     }
    .dimmer  .ui-slider-handle{ 
-                                         background: url('/img/modals_ico/slider-1-a.png') no-repeat;   
+                                         background: url('../img/modals_ico/slider-1-a.png') no-repeat;   
                                          background-size: 30px auto;
                                          border: none;
                                          width: 28px;
@@ -47,7 +47,7 @@
                                          top:12px;
                                          left: 50px;
 
-                                         background-image: url('/img/modals_ico/lamp_off.png'); 
+                                         background-image: url('../img/modals_ico/lamp_off.png'); 
                                          background-repeat: no-repeat;
                                          
                                          background-size: auto 170px;
@@ -59,7 +59,7 @@
    .dimmer  .lights_l{
        
        
-                                         background-image: url('/img/modals_ico/lamp_l.png'); 
+                                         background-image: url('../img/modals_ico/lamp_l.png'); 
                                          background-repeat: no-repeat;
                                          opacity: 0;                                        
                                          background-size: auto 170px;

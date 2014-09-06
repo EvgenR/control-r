@@ -33,7 +33,7 @@ define(['all_switcher'], function(fc){
                 html+='<tr>';
                }
                 html+='<td>';
-                 html= html+'<div class="group_win"><p>'+ep[x].title+'</p><div class="ico">'+(ep[x].icon!=''?'<img src="/img/modals_ico/'+ep[x].icon+'-'+ep[x].onoff+'.png">':'no icon')+'</div><div class="gswitch"><div class="on-off" data-on="'+ep[x].onoff+'"></div><div class="i"></div></div></div>';
+                 html= html+'<div class="group_win"><p>'+ep[x].title+'</p><div class="ico">'+(ep[x].icon!=''?'<img src="./img/dialog/'+ep[x].icon+'-'+ep[x].onoff+'.png">':'no icon')+'</div><div class="gswitch"><div class="on-off" data-on="'+ep[x].onoff+'"></div><div class="i"></div></div></div>';
               html+='</td>';
              c_td++;
              if(c_td==4){             

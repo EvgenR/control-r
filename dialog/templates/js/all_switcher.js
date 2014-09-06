@@ -31,14 +31,14 @@ define([], function(){
         ver=v;
         if(ver==1){
              $(el).css({
-                    'background': 'url(/img/modals_ico/on-off-2.png) no-repeat',
+                    'background': 'url(./img/dialog/on-off-2.png) no-repeat',
                     'background-size': '90px auto',
                     'left': '106px'
             });
         }
         if(ver==2){
                          $(el).css({
-                    'background': 'url(/img/modals_ico/on-off-3.png) no-repeat',
+                    'background': 'url(./img/dialog/on-off-3.png) no-repeat',
                     'background-size': '39px auto',
                     'left': '246px'
             });

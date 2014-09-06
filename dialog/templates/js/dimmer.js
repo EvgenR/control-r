@@ -45,11 +45,11 @@ $(elem).find( ".slider" ).slider({
     
     function this_on_off(st){ //глобальный выключатель
         if(st =='on'){
-           $(elem).find( ".lights" ).css({'background-image': 'url(./img/modals_ico/lamp_on.png)'});  
+           $(elem).find( ".lights" ).css({'background-image': 'url(./img/dialog/lamp_on.png)'});  
           };
           if(st =='off'){
              $(elem).find( ".slider" ).slider("value",0);
-            $(elem).find( ".lights" ).css({'background-image':  'url(./img/modals_ico/lamp_off.png)'});  
+            $(elem).find( ".lights" ).css({'background-image':  'url(./img/dialog/lamp_off.png)'});  
             $(elem).find( ".lights_l" ).css({opacity:0})
           }
     }
@@ -57,13 +57,13 @@ $(elem).find( ".slider" ).slider({
 function repositionTooltip( e, ui){
         if(ui.value==0){
           fc.control_set('off');
-            $(elem).find( ".lights" ).css({'background-image':  'url(./img/modals_ico/lamp_off.png)'});  
+            $(elem).find( ".lights" ).css({'background-image':  'url(./img/dialog/lamp_off.png)'});  
             $(elem).find( ".lights_l" ).css({opacity:0})
           
         }
         if(ui.value>0){//&& elem.find('.on-off').attr('data-on')=='off'){
            fc.control_set('on');
-           $(elem).find( ".lights" ).css({'background-image': 'url(./img/modals_ico/lamp_on.png)'});  
+           $(elem).find( ".lights" ).css({'background-image': 'url(./img/dialog/lamp_on.png)'});  
         }
 
 

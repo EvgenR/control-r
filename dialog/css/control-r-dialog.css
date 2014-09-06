@@ -115,7 +115,7 @@
 }
 
 .control-r-dialog-tab input{
-                                   background: url('../img/modals_ico/input_back.png') repeat-x;
+                                   background: url('../img/dialog/input_back.png') repeat-x;
                                    border-radius: 20px;
                                    border: 1px solid rgba(0, 0, 0, 0.25);
                                    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4) inset, 0 1px 0 rgba(255, 255, 255, 0.1);
@@ -166,7 +166,7 @@
 .tab-main .on-off{
                                          width: 61px;
                                          height: 55px;
-                                         background: url('../img/modals_ico/on-off.png') no-repeat;
+                                         background: url('../img/dialog/on-off.png') no-repeat;
                                          background-size: auto 55px;
                                          background-position: 0px 0px;
                                          cursor: pointer;
@@ -205,8 +205,8 @@
       .tab-work .ct-footer  .i{
                                              width: 55px;
                                          height: 55px;
-                                         background: url('/img/modals_ico/on-off.svg') no-repeat;
-                                         background-size: auto 55px;
+                                         background: url('../img/dialog/on-off.svg') no-repeat; 
+                                         background-size: auto 55px; 
                                          background-position: 0 0;
                                          cursor: pointer;
                                          position: relative;
