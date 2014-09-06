@@ -1,5 +1,24 @@
 define(['dialog-id-listeners', 'jquery_ui'], function(setInputListeners){
-	$(function(){	
+function loadjscssfile(filename, filetype){
+    //TODO: Поставить проверку, чтоыб не загружать фалы по 2 раза. Навероно ченрез массив
+    
+    if (filetype=="js"){ //if filename is a external JavaScript file
+         var fileref=document.createElement('script')
+         fileref.setAttribute("type","text/javascript")
+         fileref.setAttribute("src", filename)
+        }
+        else if (filetype=="css"){ //if filename is an external CSS file
+         var fileref=document.createElement("link")
+         fileref.setAttribute("rel", "stylesheet")
+         fileref.setAttribute("type", "text/css")
+         fileref.setAttribute("href", filename)
+        }
+        if (typeof fileref!="undefined")
+         document.getElementsByTagName("head")[0].appendChild(fileref)
+}
+	
+    
+    $(function(){	
 		var equipmentCounter = 1
           //      console.log(setInputListeners);
 		$('a').click(function(){
@@ -19,9 +38,10 @@ define(['dialog-id-listeners', 'jquery_ui'], function(setInputListeners){
 			var dlgTitle = $(dlg).dialog('option', 'title') + ' ' + equipmentCounter++
                       $(dlg).dialog('option', 'title', dlgTitle)                       
 		
-                
-                    $(tabContents[1]).load('templates/'+dialogType + '.html', function(dat){
-                
+                    $(dlg).find('li:odd').find('div').html('<img src="./img/dialog/'+dialogType +'.png">');
+
+                    loadjscssfile('templates/css/'+dialogType + ".css", "css");
+                    $(tabContents[1]).find('.ct-main').load('templates/'+dialogType + '.html', function(dat){
                         
                         require.config({
                                 baseUrl: "templates/js",
@@ -32,9 +52,11 @@ define(['dialog-id-listeners', 'jquery_ui'], function(setInputListeners){
                                                  })
 			})
                    
-		    window.dialogCommonTab  = tabContents[0]
-		    window.dialogSpecialTab = tabContents[1]
-		    setInputListeners.init($(tabContents[0]).find('input'), dlg)
+		    window.dialogCommonTab  = tabContents[0];
+		    window.dialogSpecialTab = tabContents[1];
+		    setInputListeners.init($(tabContents[0]).find('input'), dlg);
+//      		    setInputListeners.sw.ver();
+
 		})    
 	})
 })

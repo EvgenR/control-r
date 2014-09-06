@@ -12,19 +12,30 @@
                 <link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/control-r-custom/jquery-ui.min.css">
 		<link rel="stylesheet" href="css/control-r-dialog.css">
-
+		
+               
 		<script src="js/vendor/modernizr-2.8.0.min.js"></script>
+                
+                <script src="js/libs/rgraph/libraries/RGraph.common.core.js" ></script>
+                <script src="js/libs/rgraph/libraries/RGraph.line.js" ></script>
+                
 		<script src='js/vendor/require.js' data-main='js/main'></script>
 	</head>
 	<body>
 
 		<a href='#empty'>Empty</a>
 		<br>
-		<a href='#dimmer'>Диммер</a>
-		<br>
 		<a href='#switch'>Выключатель</a>
 		<br>
-		<a href='#lights'>Бегущие огни</a>
+		<!--<a href='#dimmer-g'>Диммер(горизонтальный)</a>
+		<br>-->
+		<a href='#dimmer'>Диммер</a>
+		<br>
+		<a href='#group'>Группа</a>
+		<br>
+		<a href='#meteo'>Метео</a>
+		<br>
+		<!--<a href='#lights'>Бегущие огни</a>-->
 
 		<div style='display: none'>
 			<div class='control-r-dialog' title='Новое устройство'>
@@ -34,7 +45,7 @@
 						<li><a href="#"><div class='tab-z main-tab'></div></a></li>
 						<li><a href="#"><div class='tab-z work-tab'></div></a></li>
 					</ul>
-					<div class='control-r-dialog-tab'>
+					<div class='control-r-dialog-tab tab-main'>
                                                 <div>
                                                     <input id="id" type="text"   placeholder='ID' >
                                                     <input id="name"  type="text"  placeholder='Название' >
@@ -50,7 +61,13 @@
                                                     <button  id="res"  data-on='0'><img src="./img/icones/setting-bc.png"></button>Сбросить настройки
                                                 </div>
 					</div>
-					<div class='control-r-dialog-tab'>Special content will be here</div>
+					<div class='control-r-dialog-tab tab-work'>
+                                            <div class="ct-main">Special content will be here</div>
+                                            <div class="ct-footer">
+                                                    <div class='on-off' data-on='off'></div>
+                                                    <div class="i"></div>
+                                            </div>
+                                        </div>
 				</div> <!-- End of tabs   -->
 			</div>     <!-- End of dialog -->
 		</div>         <!-- End of hidden -->

@@ -1,0 +1,53 @@
+.group table td {
+   width: 140px;
+   height: 200px;    
+   
+                                               background: url('/img/dialog/vert-line.png') repeat-y;
+                                             background-size: 4px auto;
+                                             background-position: 146px 0px;
+   
+ 
+
+  padding: 0 5px 5px 5px;                                             
+}
+
+.group .group_win{
+    width: 140px;
+    height: 200px;
+    padding-top:5px; 
+    text-align: center;
+                                              background: url('/img/dialog/gor-line.png') repeat-x;
+                                             background-size: auto 4px ;
+                                             background-position: 0px 2px;
+}
+
+
+.group .group_win .ico img{
+    height: 100px;
+}
+
+.group .group_win .on-off{
+                                               width: 83px;
+                                         height: 40px;
+                                         background: url('/img/modals_ico/on-off-2.png') no-repeat;
+                                         background-size: 80px auto;
+                                         background-position: 0 0;
+                                         cursor: pointer;
+                                         position: relative;
+                                  /*      left: 106px;
+                                         top:9px;*/
+  
+    }
+    
+     .group .group_win  .i{
+                                             width: 55px;
+                                         height: 55px;
+                                         background: url('/img/modals_ico/on-off.svg') no-repeat;
+                                         background-size: auto 55px;
+                                         background-position: 0 0;
+                                         cursor: pointer;
+                                         position: relative;
+                                         left: 78px;
+                                         top:-47px;
+  
+    }
