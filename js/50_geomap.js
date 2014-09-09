@@ -1,4 +1,4 @@
-define(['21_geoobjects'], function(Geoobjects){
+define(['geoobjects'], function(Geoobjects){
   var mapDiv = $('#geo-map').height($(window).height())[0]		
   L.mapbox.accessToken = 'pk.eyJ1IjoiYWxleHJ1MjAxNCIsImEiOiJJMHQ4NnFRIn0.3BBwGZ_YzX1lGX_yzSjcvg'
   var map = L.mapbox.map(mapDiv, 'alexru2014.jdegnod6').setView([Geoobjects.view.lat, Geoobjects.view.lng], Geoobjects.view.zoom)
@@ -10,6 +10,7 @@ define(['21_geoobjects'], function(Geoobjects){
 	  setClick(marker, hash)
   }
   $.mobile.loading('hide')
+  return L
 })
 
 function setClick(m, h){

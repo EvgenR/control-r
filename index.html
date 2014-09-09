@@ -13,7 +13,7 @@
 		<link rel="stylesheet" href="css/control-r-custom/jquery-ui.min.css">
 		<link rel="stylesheet" href="css/control-r-main.css">
 		<link rel="stylesheet" href="css/control-r-icones.css">
-		<link rel="stylesheet" href="css/control-r-dialog.css">
+		<link rel="stylesheet" href="templates/css/dialog.css">
 		<link rel='stylesheet' href='https://api.tiles.mapbox.com/mapbox.js/v2.0.1/mapbox.css'>
 	    <link rel='stylesheet' href='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-label/v0.2.1/leaflet.label.css'>
 
@@ -26,7 +26,7 @@
 				<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 		<![endif]-->
 
-		<div data-role='page' id='geo-page'>
+		<div data-role='page' id='geo-page' data-i18n-title='Geography of objects'>
 
 			<div data-role='header' data-position='fixed' data-i18n-title='Geography of objects' class='control-r-header-with-logo control-r-hide-on-start' data-theme='b'>
 				<h1>&nbsp;</h1>
@@ -86,12 +86,12 @@
 			<div data-role="page" data-title="" style='overflow-y: hidden;' class='page-template'>
 
 				<div data-role="header" data-position="fixed" class='header-with-logo control-r-hide-on-start' data-theme='b'>
-					<h1>&nbsp;</h1>
+					<h1 class='control-r-header-with-logo'>&nbsp;</h1>
 				    <a href="#nav-panel" data-iconpos="notext" class='control-r-icon-link control-r-icon-props' data-icon='false' data-shadow='false'></a>
 				    <a href="#nav-panel" data-iconpos="notext" class='control-r-icon-link control-r-icon-graph' data-icon='false' data-shadow='false'></a>
 				</div>
 
-				<div id='map-of-object'></div>
+				<div class='map-of-object'>&nbsp;</div>
 
 				<div data-role="panel" data-position-fixed="true" data-display="overlay" id="navigation" data-theme='b' class='control-r-hide-on-start'>
 					<ul data-role="listview">
@@ -101,28 +101,28 @@
 					<div id="equipment-group-security" data-role='collapsible' data-iconpos='right' class="control-r-icon-security" data-inset="false">
 						<h3 data-i18n-text='Security'>&nbsp;</h3>
 						<ul data-role="listview">
-							<li data-eqgrp='webcam'><a href="#" data-i18n-text='Security cams'>&nbsp;</a></li>
+							<li><a data-eqgrp='webcam' href="#" data-i18n-text='Security cams'>&nbsp;</a></li>
 						</ul>		
 					</div>
 
 					<div id="equipment-group-energy" data-role='collapsible' data-iconpos='right' class="control-r-icon-energy" data-inset="false">
 						<h3 data-i18n-text='Economy of energy'>&nbsp;</h3>
 						<ul data-role="listview">
-							<li data-eqgrp='light-inner'><a href="#"                 data-i18n-text='Inner lighting'>&nbsp;</a></li>
-							<li data-eqgrp='light-outer'><a href="#"                 data-i18n-text='Outer lighting'>&nbsp;</a></li>
-							<li data-eqgrp='jack'><a href="#"                        data-i18n-text='Electric jack'>&nbsp;</a></li>
-							<li data-eqgrp='temperature-sensor'><a href="#"          data-i18n-text='Termometr'>&nbsp;</a></li>
-							<li data-eqgrp='temperature-humidity-sensor'><a href="#" data-i18n-text='Temperature and humility sensor'>&nbsp;</a></li>
-							<li data-eqgrp='leak-sensor'><a href="#"                 data-i18n-text='Flood sensor'>&nbsp;</a></li>
+							<li><a data-eqgrp='light-inner' href="#"                 data-i18n-text='Inner lighting'>&nbsp;</a></li>
+							<li><a data-eqgrp='light-outer' href="#"                 data-i18n-text='Outer lighting'>&nbsp;</a></li>
+							<li><a data-eqgrp='jack' href="#"                        data-i18n-text='Electric jack'>&nbsp;</a></li>
+							<li><a data-eqgrp='temperature-sensor' href="#"          data-i18n-text='Termometr'>&nbsp;</a></li>
+							<li><a data-eqgrp='temperature-humidity-sensor' href="#" data-i18n-text='Temperature and humility sensor'>&nbsp;</a></li>
+							<li><a data-eqgrp='leak-sensor' href="#"                 data-i18n-text='Flood sensor'>&nbsp;</a></li>
 						</ul>		
 					</div>
 
 					<div id="equipment-group-comfort" data-role='collapsible' data-iconpos='right' class="control-r-icon-comfort" data-inset="false">
 						<h3 data-i18n-text='Comfort'>Комфорт</h3>
 						<ul data-role="listview">
-							<li data-eqgrp='tv'><a href="#"      data-i18n-text='TV set'>Телевизор</a></li>
-							<li data-eqgrp='audio'><a href="#"   data-i18n-text='Musical center'>Музыкальный центр</a></li>
-							<li data-eqgrp='garland'><a href="#" data-i18n-text='Guirland'>Гирлянда</a></li>
+							<li><a data-eqgrp='tv' href="#"      data-i18n-text='TV set'>Телевизор</a></li>
+							<li><a data-eqgrp='audio' href="#"   data-i18n-text='Musical center'>Музыкальный центр</a></li>
+							<li><a data-eqgrp='garland' href="#" data-i18n-text='Guirland'>Гирлянда</a></li>
 						</ul>		
 					</div>
 

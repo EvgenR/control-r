@@ -1,5 +1,4 @@
-define(function(){
-	return {
+define({
 	  view: {
 		lat: 56.326365284004304,
 		lng: 43.98850679397583,
@@ -23,7 +22,7 @@ define(function(){
 		  {uuid: 'e85a948b-8f25-4f4a-ba57-60b8c9fc88e6', label: 'Общий план'},
 		],
 	  },
-	  chelny_1: {
+	  yarik: {
 	    icon: 'plant',
 		label: 'Производство в Ярославле',
 		lat: 57 + 39/60,
@@ -32,5 +31,5 @@ define(function(){
 		  {uuid: 'e85a948b-8f25-4f4a-ba57-60b8c9fc88e6', label: 'Общий план'},
 		],
 	  },
-	}
-})
+  }
+)
