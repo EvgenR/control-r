@@ -28,17 +28,10 @@ define(['equipment', 'locstor'], function(Equipment, Locstor){
 		  $('<option value="' + i + '">' + val.name + '</option>').appendTo(equipmentSelect)	  
 		}
 
-        equipmentSelect.change(function(){
-		  alert($(this).value())
-		})
-		/*
-		$(idInput).keyup(function(){
-			if($(idInput).val().length > 20){alert('Пожалуйста, будьте аккуратнее!'); return}
-			var val = $(idInput).val()
-			if(!Equipment || !val || !Equipment[val]) return false;
-			if(!window.debug && Locstor.get(val)){alert('Это оборудование уже привязано к маркеру.'); return}  
+        $(equipmentSelect).change(function(){
+		    var val = $(this).val()
 			Locstor.set(val, {})
-			$(idInput).prop('disabled', true)  
+			$(equipmentSelect).prop('disabled', true)  
 			var title = Equipment[val].name
 			if(title){ 
 				$(dlg).dialog('option', 'title', title);
@@ -64,6 +57,14 @@ define(['equipment', 'locstor'], function(Equipment, Locstor){
 				  loadSpecial(params, Locstor)	  
 				}, 500)
 			})
+		})
+		/*
+		$(idInput).keyup(function(){
+			if($(idInput).val().length > 20){alert('Пожалуйста, будьте аккуратнее!'); return}
+			var val = $(idInput).val()
+			if(!Equipment || !val || !Equipment[val]) return false;
+			if(!window.debug && Locstor.get(val)){alert('Это оборудование уже привязано к маркеру.'); return}  
+			// TODO : Возможно, с клавиатуры тоже придется...
 		})
 		*/
 
