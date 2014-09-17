@@ -14,7 +14,7 @@ function setMap(L, i, objs, Dialog, Equipment){
 	    var mapDiv = $(page).find('.map-of-object')[0]
 	    $(mapDiv).height($(window).height() - 44).css({overflow: 'hidden'})
 	    var uuid = objs[i].schemes[0].uuid
-	    var tileLayer = L.tileLayer('img/schemes/' + uuid + '/{z}/{x}_{y}.png')
+	    var tileLayer = L.tileLayer('/img/schemes/' + uuid + '/{z}/{x}_{y}.png')
 	    var tilesArray = []  
 	    tilesArray.push(tileLayer)
 	    objs[i].map = L.map(mapDiv, {doubleClickZoom: null, attributionControl: null, zoomControl: null, layers: tilesArray, zoom: 3, minZoom: 3, maxZoom: 4, center: [0, 0]})   
@@ -36,6 +36,6 @@ function setMap(L, i, objs, Dialog, Equipment){
 function loadWidgetsCss(href) {
 	var cssLinks = $('link[data-css-id=' + href + ']')
     if(cssLinks.length > 0) return		
-	var cssLink = $("<link data-css-id='" + href + "'rel='stylesheet' type='text/css' href='templates/css/" + href + ".css'>");
+	var cssLink = $("<link data-css-id='" + href + "'rel='stylesheet' type='text/css' href='/templates/css/" + href + ".css'>");
 	$("head").append(cssLink); 
 };
