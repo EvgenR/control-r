@@ -14,4 +14,16 @@ define({
 		name: 'Бегущие огни №1',
         group: 'light-outer',
 	},
+    switch_01: {
+		name: 'Выключатель №1',
+        group: 'jack',
+	},
+     dimmer_01: {
+		name: 'Диммер №1',
+        group: 'dimmer',
+	},
+     meteo_01: {
+		name: 'СуперМетео №1',
+        group: 'meteo',
+	},
 })

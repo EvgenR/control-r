@@ -1,0 +1,107 @@
+.meteo-header{
+    background: url("/templates/img/icons/meteo.png") no-repeat;
+    cursor: pointer;
+    height: 27px;
+    width: 35px;
+        position: relative;
+    top: 3px;
+    
+}
+
+.meteo-header-2{
+    background: url("/templates/img/icons/meteo-2.png") no-repeat;
+     background-size: auto 23px;
+    cursor: pointer;
+    height: 27px;
+    width: 52px;
+        position: relative;
+    top: 3px;
+    
+}
+
+
+
+.meteo{
+    height: 360px;
+    margin-top: 15px;
+}
+
+.meteo .dis{
+    height: 188px;
+    width: 338px;
+    
+     background: url('/templates/img/meteo/display.png') no-repeat;
+     font-size: 23px;
+     padding: 20px 0 0 30px;
+     position: relative;
+
+}
+
+.meteo .dis2{
+    position: relative;
+    left: 350px;
+    top:-210px;
+}
+.meteo .dis2 td{
+    text-align: center;
+    height: 80px;
+    padding: 10px;
+}
+
+.meteo .dis2 .i1{
+}
+
+.meteo .dis2 .i2{
+    font-size: 57px;
+}
+.meteo .dis2 .i3{
+}
+.meteo .dis2 .i4{
+    font-size: 38px;
+}
+
+.meteo .graf{
+    height: 140px;
+    width: 100%;
+    background-color: #4d4d4d;
+    position: relative;
+    top:-200px;
+    font-size: 10px;
+    color: #fff;
+}
+
+.meteo-informer{
+    width: 100%;
+    height: 100%;
+    padding-left: 24px;
+}
+
+.meteo-informer .m-info{
+    margin: 1px 10px 10px 10px;
+    float:left;
+    width: 141px;
+    height: 386px;
+                                    background: url('/templates/img/main/vert-line.png') repeat-y;
+                                    background-size: 4px auto;
+                                    background-position: 137px 0px;
+    
+}
+
+.meteo-informer .m-info .day{
+     width: 100%;
+     font-size: 38px;
+     color: #fff;
+          margin: 30px 24px 26px 20px;
+}
+.meteo-informer .m-info .icon{
+     width: 100%;
+}
+
+.meteo-informer .m-info .t{
+     width: 100%;
+     font-size: 38px;
+     color: #fff;
+            margin: 30px 0 0 0;  
+
+}
+
