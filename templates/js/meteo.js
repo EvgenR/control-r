@@ -92,7 +92,7 @@ define(function(){
         $(G.tabs).append( "<div class='control-r-dialog-tab' id='" + id + "'></div>" );
         $(G.tabs).tabs( "refresh" );
         G.secondTab=$(G.tabs).find('div#'+id);
-        $(G.secondTab).load('../../templates/meteo-tab2.html',{}, 
+        $(G.secondTab).load('../templates/meteo-tab2.html',{}, 
         function(){
             init_secondTab();
         }
