@@ -1,5 +1,5 @@
 .meteo-header{
-    background: url("/templates/img/icons/meteo.png") no-repeat;
+    background: url("../../templates/img/icons/meteo.png") no-repeat;
     cursor: pointer;
     height: 27px;
     width: 35px;
@@ -9,7 +9,7 @@
 }
 
 .meteo-header-2{
-    background: url("/templates/img/icons/meteo-2.png") no-repeat;
+    background: url("../../templates/img/icons/meteo-2.png") no-repeat;
      background-size: auto 23px;
     cursor: pointer;
     height: 27px;
@@ -30,7 +30,7 @@
     height: 188px;
     width: 338px;
     
-     background: url('/templates/img/meteo/display.png') no-repeat;
+     background: url('../../templates/img/meteo/display.png') no-repeat;
      font-size: 23px;
      padding: 20px 0 0 30px;
      position: relative;
@@ -81,7 +81,7 @@
     float:left;
     width: 141px;
     height: 386px;
-                                    background: url('/templates/img/main/vert-line.png') repeat-y;
+                                    background: url('../../templates/img/main/vert-line.png') repeat-y;
                                     background-size: 4px auto;
                                     background-position: 137px 0px;
     
