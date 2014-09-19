@@ -36,6 +36,6 @@ function setMap(L, i, objs, Dialog, Equipment){
 function loadWidgetsCss(href) {
 	var cssLinks = $('link[data-css-id=' + href + ']')
     if(cssLinks.length > 0) return		
-	var cssLink = $("<link data-css-id='" + href + "'rel='stylesheet' type='text/css' href='/templates/css/" + href + ".css'>");
+	var cssLink = $("<link data-css-id='" + href + "'rel='stylesheet' type='text/css' href='templates/css/" + href + ".css'>");
 	$("head").append(cssLink); 
 };
