@@ -28,7 +28,7 @@
 }
 
 .control-r-dialog-tabs{
-    background:  url('/templates/img/main/tab-line.png') repeat-x;
+    background:  url('templates/img/main/tab-line.png') repeat-x;
     background-position: 0px 41px;
     height: 100%;
 }
@@ -78,7 +78,7 @@
 
 .control-r-dialog-tabs  div.main-tab{
                                              
-                                         background: url('/templates/img/main/tab-main.png') no-repeat;
+                                         background: url('templates/img/main/tab-main.png') no-repeat;
                                          background-size: auto 31px;
                                          background-position: 0 0;
 }
@@ -104,7 +104,7 @@
 }
 
 .tab-main .on-off{
-            background:  url('/templates/img/main/on-off.png');
+            background:  url('templates/img/main/on-off.png');
                                          background-size: auto 55px;
 /*                                         background-position: 0px 0px;*/
                                          background-position: -59px 0px;
@@ -127,7 +127,7 @@
 }
 
 .control-r-dialog-tab input{
-                                   background: url('/templates/img/main/input_back.png') repeat-x;
+                                   background: url('templates/img/main/input_back.png') repeat-x;
                                    border-radius: 20px;
                                    border: 1px solid rgba(0, 0, 0, 0.25);
                                    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4) inset, 0 1px 0 rgba(255, 255, 255, 0.1);
@@ -142,7 +142,7 @@
                                }
                                
 .control-r-dialog-tab select{
-                                   background: url('/templates/img/main/input_back.png') repeat-x;
+                                   background: url('templates/img/main/input_back.png') repeat-x;
                                    border-radius: 20px;
                                    border: 1px solid rgba(0, 0, 0, 0.25);
                                    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4) inset, 0 1px 0 rgba(255, 255, 255, 0.1);
@@ -185,7 +185,7 @@
                                      }
                                      
 .control-r-dialog-tab .control-long button{
-      background: url("/css/control-r-custom/images/ui-bg_glass_40_3d3d3d_1x400.png") repeat-x scroll 50% 50% #3d3d3d;
+      background: url("css/control-r-custom/images/ui-bg_glass_40_3d3d3d_1x400.png") repeat-x scroll 50% 50% #3d3d3d;
                                          border-radius: 10px;
                                          height: 40px;
                                          font-size: 10px;
@@ -202,7 +202,7 @@
                                          margin: 0 -7px  0;
                                      }                                     
                                      .control-r-dialog-tab .control-long button:hover{
-                                      background: url("/css/control-r-custom/images/ui-bg_glass_60_000000_1x400.png") repeat-x scroll 50% 50% #3d3d3d;
+                                      background: url("css/control-r-custom/images/ui-bg_glass_60_000000_1x400.png") repeat-x scroll 50% 50% #3d3d3d;
                                       text-shadow: 0 1px 1px #f3f3f3;
                                          
                                      }     
@@ -215,7 +215,7 @@
 
 /*   FOOTER */
 .main_switcher{
-        background:  url('/templates/img/main/tab-line.png') repeat-x;
+        background:  url('templates/img/main/tab-line.png') repeat-x;
     background-position: 0px 0px;
     width: 100%;
     height: 50px;
@@ -232,7 +232,7 @@
 }
 
 .main_switcher .block .on-off{
-        background:  url('/templates/img/main/on-off-m.png');
+        background:  url('templates/img/main/on-off-m.png');
                                          width: 78px;
                                          height: 35px;
                                          background-size: auto 80px;
@@ -242,7 +242,7 @@
 
 }
 .main_switcher .block .i{
-            background:  url('/templates/img/main/on-off.png');
+            background:  url('templates/img/main/on-off.png');
                                          background-size: auto 35px;
                                          background-position: -4px 0;
                                          width: 35px;
