@@ -126,7 +126,11 @@ box-shadow:         11px 11px 5px 0px rgba(50, 50, 50, 0.75);
 /*****CONTROLS                                ************/
 .control-r-dialog-tabs .control-r-dialog-tab {
   /*padding-top: 15px; */
- padding: 0px 0px 0px 20px; //up left 
+ padding: 0px 0px 0px 0px; //up left 
+}
+
+.main-controls{
+    padding: 0px 0px 0px 20px;
 }
 
 .control-r-dialog-tab{
