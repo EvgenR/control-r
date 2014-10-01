@@ -26,4 +26,12 @@ define({
 		name: 'СуперМетео №1',
         group: 'meteo',
 	},
+     m_sensor_01: {
+		name: 'Датчик движения №1',
+        group: 'mot-sensor',
+	},
+     group_01: {
+		name: 'Группа датчиков №1',
+        group: 'group',
+	},
 })

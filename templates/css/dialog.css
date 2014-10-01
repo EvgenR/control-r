@@ -3,11 +3,15 @@
   background-color: #1d1d1d;
   overflow: no-display !important;
   border:1px solid #615959;
+
 }
 .ui-dialog {
   background-color: #3D3D3D !important;
         overflow: hidden !important; 
          border-radius: 20px;
+      -webkit-box-shadow: 11px 11px 5px 0px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    11px 11px 5px 0px rgba(50, 50, 50, 0.75);
+box-shadow:         11px 11px 5px 0px rgba(50, 50, 50, 0.75);         
 }
 
 
@@ -21,7 +25,10 @@
 
 .ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br{
     border:none;
+
 }
+
+
 
 .ui-shadow-inset {
     box-shadow: none;
@@ -113,13 +120,13 @@
                                          cursor: pointer;
                                          position: absolute;
                                          left: 270px;
-                                         top:82px;
+                                         top:72px;
                                      } 
 
 /*****CONTROLS                                ************/
 .control-r-dialog-tabs .control-r-dialog-tab {
   /*padding-top: 15px; */
- padding: 0px 0px 0px 0px; //up left 
+ padding: 0px 0px 0px 20px; //up left 
 }
 
 .control-r-dialog-tab{
@@ -134,30 +141,14 @@
                                    padding-left: 5px;
                                    font-weight: bold;
                                    color:#fff;
-                                   margin-top: 10px;
-                                   margin-bottom: 10px;
+                                   margin-top: 5px;
+                                   margin-bottom: 20px;
                                    width: 200px;
                                    font-size: 14px;
                                    height: 25px;
                                }
                                
-.control-r-dialog-tab select{
-                                   background: url('../../templates/img/main/input_back.png') repeat-x;
-                                   border-radius: 20px;
-                                   border: 1px solid rgba(0, 0, 0, 0.25);
-                                   box-shadow: 0 0 5px rgba(0, 0, 0, 0.4) inset, 0 1px 0 rgba(255, 255, 255, 0.1);
-                                   padding-left: 5px;
-                                   font-weight: bold;
-                                   color:#afabab;
-                                   margin-top: 10px;
-                                   margin-bottom: 10px;
-                                   width: 200px;
-                                   font-size: 14px;
-                                   height: 25px;
-                                    -webkit-appearance: none;
-                                     overflow: hidden;
-                                  
-                               }
+
                                
                                .control-r-dialog-tab select option{
                                    height: 25px;
@@ -252,3 +243,32 @@
                                           margin-left: 10px;
 
 }
+
+ /*
+.styled-select {
+   background: url(../../templates/img/main/select.png) no-repeat ;
+                                            background-size: auto 25px;
+                                         background-position: 207px 10px;
+   height: 36px;
+   border-radius: 20px;
+   overflow: hidden;
+   width: 240px;
+}*/
+
+.control-r-dialog-tab select{
+                                   background: url('../../templates/img/main/input_back.png') repeat-x;
+                                   border-radius: 20px;
+                                   border: 1px solid rgba(0, 0, 0, 0.25);
+                                   box-shadow: 0 0 5px rgba(0, 0, 0, 0.4) inset, 0 1px 0 rgba(255, 255, 255, 0.1);
+                                   padding-left: 5px;
+                                   font-weight: bold;
+                                   color:#afabab;
+                                   margin-top: 20px;
+                                   margin-bottom: 10px;
+                                   width: 209px;
+                                   font-size: 14px;
+                                   height: 25px;
+                                    /*-webkit-appearance: none;*/
+                                     overflow: hidden;
+                                  
+                               }
