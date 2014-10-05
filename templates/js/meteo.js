@@ -51,7 +51,7 @@ define(['Chart'],function(Chart){
          display:'Москва<br>Влажность    89%<br>Ветер           Ю<br>Температура 27 с<br>Давление      760<br>'
          } // Объект для хранения состояний
 	
-        $(G.dialog).dialog({width: 655, height: 515})
+        $(G.dialog).dialog({width: 599, height: 515})
 	 STORAGE.set(G.id, state) // Сохранение в локальном хранилище
         $(G.tabs).find('.work-tab').html('<div class="meteo-header"></div>');
         local_unit();

@@ -38,7 +38,7 @@
 }
 
 .meteo .dis2{
-   left: 335px;
+   left: 345px;
     position: relative;
     top: -196px;
 }
@@ -48,16 +48,17 @@
     padding: 10px;
 }
 
-.meteo .dis2 .i1{
+.meteo .dis2 .i1 img{
+    width: 80px;
 }
 
 .meteo .dis2 .i2{
-    font-size: 57px;
+    font-size: 46px;
 }
 .meteo .dis2 .i3{
 }
 .meteo .dis2 .i4{
-    font-size: 38px;
+    font-size: 34px;
 }
 
 .meteo .graf{
@@ -73,17 +74,15 @@
 .meteo-informer{
     width: 100%;
     height: 100%;
-    padding-left: 24px;
+    padding-left: 14px;
 }
 
 .meteo-informer .m-info{
-    margin: 1px 10px 10px 10px;
-    float:left;
-    width: 141px;
-    height: 386px;
-                                    background: url('../../templates/img/main/vert-line.png') repeat-y;
-                                    background-size: 4px auto;
-                                    background-position: 137px 0px;
+   background: url("../../templates/img/main/vert-line.png") repeat-y scroll 133px 0 / 4px auto rgba(0, 0, 0, 0);
+    float: left;
+    height: 355px;
+    margin: 19px 0 5px 8px;
+    width: 139px;
     
 }
 

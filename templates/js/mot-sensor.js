@@ -39,7 +39,7 @@ define(['Chart'],function(Chart){
          wstatus: 'off',
          level: 50, 
          } // Объект для хранения состояний
-	 $(G.dialog).dialog({width: 620, height: 420});
+	 $(G.dialog).dialog({width: 399, height: 420});
 	 STORAGE.set(G.id, state) // Сохранение в локальном хранилище
         $(G.tabs).find('.work-tab').html('<div class="ms-header"></div>');
         local_unit();

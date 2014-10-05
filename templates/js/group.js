@@ -49,10 +49,10 @@ define(function(){
             if(x!=3 && x!=6){html= html+'<div class="vert-border"></div>';}
          }
             if(line==2){
-                  $(G.dialog).dialog({width: 625, height: 610})
+                  $(G.dialog).dialog({width: 599, height: 610}); 
                 
             }else{
-                     $(G.dialog).dialog({width: 625, height: 350})                
+                     $(G.dialog).dialog({width: 599, height: 350});                
             }
            
          $(elem).html(html);

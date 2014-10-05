@@ -9,9 +9,9 @@
   background-color: #3D3D3D !important;
         overflow: hidden !important; 
          border-radius: 20px;
-      -webkit-box-shadow: 11px 11px 5px 0px rgba(50, 50, 50, 0.75);
--moz-box-shadow:    11px 11px 5px 0px rgba(50, 50, 50, 0.75);
-box-shadow:         11px 11px 5px 0px rgba(50, 50, 50, 0.75);         
+      -webkit-box-shadow: 8px 7px 10px 0px rgba(50, 50, 50, 0.67);
+-moz-box-shadow:    8px 7px 10px 0px rgba(50, 50, 50, 0.67);
+ box-shadow: 8px 7px 10px 0 rgba(50, 50, 50, 0.67);        
 }
 
 
